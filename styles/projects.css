@@ -1,0 +1,29 @@
+/* .card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 300px;
+} */
+
+.btn {
+    background-color: #965bcc;
+    border-color: #8f50ca;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #965bcc;
+    border-color: #8f50ca;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #8f50ca;
+    border-color: #8f50ca;
+    color: black;
+}
+
+.highlight {
+    color: green;
+    white-space: nowrap;
+}

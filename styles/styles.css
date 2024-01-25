@@ -19,6 +19,9 @@ header {
     text-align: center;
 }
 
+main {
+    background-color: #f4f4f4;
+}
 section {
     padding: 2em;
 }
