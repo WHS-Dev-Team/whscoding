@@ -2,19 +2,18 @@
 
 
 ::selection {
-    background-color: pink;
-    color: black;
+    background-color: #965bcc;
+    color: white;
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background-color: #965bcc;
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -81,31 +80,46 @@ main h2, p{
     align-items: center;
 }
 
-/* Additional styling for the founders section */
+/* Add this CSS to center the 'Our Founders' heading */
 .founders-section {
     text-align: center;
+    display: flex;
+    justify-content: space-between; /* Spread items equally */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.founders-section h2 {
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.founders-section h2 {
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+#yes {
+    margin-bottom: 60px;
+}
+/* Additional styling for the founders section */
+.founders-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.founder {
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-}
-
 .founder img {
-    border-radius: 50%;
-    max-width: 100px;
+    border-radius: 100%;
+    max-width: 200px;
+    padding: 5px;
 }
 
 .founder h3 {
-    margin-top: 10px;
+    /* display: inline-block; */
+    max-width: 500px;
+    padding: 30px;
+    margin: 20px 0 0 0;
 }
 
 /* Add this CSS to handle responsiveness */
@@ -114,3 +128,4 @@ main h2, p{
         flex-direction: column;
     }
 }
+
