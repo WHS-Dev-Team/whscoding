@@ -1,19 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 
+::selection {
+    background-color: pink;
+    color: black;
+}
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-main {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
 }
 
-p::selection {
-    background: pink;
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main h2, p{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  NAV BAR */
+.navbar {
+    padding: 0.5rem; /* Adjust the padding as needed */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.5rem; /* Adjust the padding as needed */
+}
+
+.navbar-nav {
+    flex-direction: row; /* Display nav items in a row */
+}
+
+.nav-item {
+    margin-right: 0.5rem; /* Adjust the margin as needed */
+}
+
+/* Optional: Make the active link more noticeable */
+.nav-item.active {
+    background-color: #eee; /* Add a background color for the active link */
+}
+
+/* MEMBERS */
+
+/* Add this CSS for the main content layout */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h2     {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Additional styling for the founders section */
+.founders-section {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.founder {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.founder img {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.founder h3 {
+    margin-top: 10px;
+}
+
+/* Add this CSS to handle responsiveness */
+@media (max-width: 600px) {
+    .founders-section {
+        flex-direction: column;
+    }
 }
