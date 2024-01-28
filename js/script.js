@@ -1,18 +1,16 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Function to handle hash changes
-    function handleHashChange() {
-        var hash = window.location.hash.substring(1); // Get the hash without the '#'
-        var element = document.getElementById(hash);
+const parallaxLayers = 7;
 
-        // Scroll to the target element
-        if (element) {
-            element.scrollIntoView();
-        }
-    }
+for (let i = 0; i <= parallaxLayers; i++) {
+  const x = (parallaxLayers - i) / 2;
+  const transformValue = `translateZ(-${100 * x}px) scale(${x + 1})`;
+  const selector = `.parallax__layer__${i}`;
+  const style = `transform: ${transformValue};`;
 
-    // Event listener for hash changes
-    window.addEventListener('hashchange', handleHashChange);
+  const rule = `${selector} { ${style} }`;
 
-    // Initial handling of hash (when the page loads)
-    handleHashChange();
-});
+  // Create a <style> element and append the CSS rule to it
+  const styleElement = document.createElement('style');
+  styleElement.innerHTML = rule;
+  document.head.appendChild(styleElement);
+}
+

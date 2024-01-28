@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #FEDCC8;
+}
+
+.navbar .active {
+  background-color: #2D112B; /* Change the active nav link color */
+}
+/* Optional: Make the active link more noticeable */
+#text {
+  color: #fff; 
+}
+
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 50;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+  z-index: 1;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.parallax__cover {
+  background: #2D112B;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+}
+
+.parallax h3 {
+  position: absolute;
+  top: 51%;
+  left: 50%; /* Adjusted left position to center horizontally */
+  /* transform: translateX(2%); Adjusted to center the element horizontally */
+  font-size: 5em;
+  color: #333;
+  text-shadow: 2px 2px 4px #000;
+}
+
+
+@media (max-width: 600px) {
+  .parallax h3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.info {
+  background-color: #FEDCC8;
+  padding: 2em;
+  z-index: 2;
+}

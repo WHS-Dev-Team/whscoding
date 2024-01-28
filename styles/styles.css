@@ -2,25 +2,27 @@
 
 
 ::selection {
-    background-color: #965bcc;
+    background-color: #2D112B;
     color: white;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FEDCC8;
 }
 
 header {
-    background-color: #965bcc;
+    background-color: #2D112B;
     color: #fff;
     padding: 1em;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 main {
-    background-color: #f4f4f4;
+    background-color: #FEDCC8;
 }
 section {
     padding: 2em;
@@ -63,10 +65,12 @@ main h2, p{
     margin-right: 0.5rem; /* Adjust the margin as needed */
 }
 
-/* Optional: Make the active link more noticeable */
-.nav-item.active {
-    background-color: #eee; /* Add a background color for the active link */
+
+.active {
+    background-color: #e4e4e4;
+    border-radius: 10px;
 }
+
 
 /* MEMBERS */
 
